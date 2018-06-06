@@ -62,6 +62,9 @@ body{
     color: white;
     width: 100%;
 }
+.sidebar a:hover{
+    background: #666;   
+}
 
 /*main content*/
 .main_content{
@@ -136,8 +139,6 @@ section a img{
 
 /*Contact Modal Window styling*/
 /* { box-sizing: border-box; }*/
-
-#contact:hover { background: #666; }
 #contact:active { background: #444; }
 
 #contactForm { 
