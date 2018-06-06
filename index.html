@@ -9,6 +9,9 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="header">
@@ -29,7 +32,7 @@
     <section class="sidebar">
         <a href="#">Projects</a>
         <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#" id="contact">Contact</a>
     </section>
     <div class="content">
         <section class="main_content">
@@ -43,7 +46,7 @@
             <h3>Featured Work</h3>
             <a href="#"><img src="img/credit_squeeze.jpg" alt="credit_squeeze from pixabay.com">Budget Web App</a> 
             <a href="#"><img src="img/drawing.jpg" alt="drawing from pixabay.com">Drawing Web App</a>
-            <a href="#"><img src="img/puzzle.jpg" alt="puzzle from pixabay.com">Memory Web App</a>
+            <a href="memory-game/index.html"><img src="img/puzzle.jpg" alt="puzzle from pixabay.com">Memory Web App</a>
         </section>
     </div>
     <section id="about">
@@ -54,6 +57,21 @@
         </p>
     </section>
 </main>
+
+<!--Popup form-->
+<div id="contactForm">
+    <span class="close"><i class="fas fa-window-close"></i></span>
+    <h1>Thank you for contacting me!</h1>
+    <small>Please fill out this form and I will get to you as soon as possible!</small>
+    <form action="#">
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+    </form>
+</div>
 <script src="js/responsive.js"></script>
 </body>
 </html>
