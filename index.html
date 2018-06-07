@@ -61,15 +61,17 @@
     <span class="close"><i class="fas fa-window-close"></i></span>
     <h1>Thank you for contacting me!</h1>
     <small>Please fill out this form and I will get to you as soon as possible!</small>
-    <form action="#">
+    <form id="gform" method="post" name="myemailform" action="https://script.google.com/macros/s/AKfycbzGj8JiWqQAPFrg2A4hHWTTTt_01fQixh4VgRw/exec">
         <input placeholder="Name" type="text" required />
         <input placeholder="Email" type="email" required />
         <input placeholder="Subject" type="text" required />
-        <textarea placeholder="Comment"></textarea>
-        <input class="formBtn" type="submit" />
+        <textarea id="message" name="message" placeholder="message"></textarea>
+        <input class="formBtn" type="submit" value="Send Form"/>
         <input class="formBtn" type="reset" />
     </form>
 </div>
 <script src="js/responsive.js"></script>
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 </body>
 </html>
